@@ -2,5 +2,47 @@
 
 [ext_resource type="Script" uid="uid://dd66wc8rlefa3" path="res://scripts/main.gd" id="1_o5qli"]
 
-[node name="Main" type="Node2D"]
+[node name="Main" type="Node2D" node_paths=PackedStringArray("menu_buttons")]
 script = ExtResource("1_o5qli")
+menu_buttons = [NodePath("CanvasLayer/HBoxContainer/SaveButton"), NodePath("CanvasLayer/HBoxContainer/LoadButton"), NodePath("CanvasLayer/HBoxContainer/SaveExitButton"), NodePath("CanvasLayer/HBoxContainer/NoSaveExitButton")]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = 5
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer"]
+offset_left = 36.0
+offset_top = 25.0
+offset_right = 560.0
+offset_bottom = 68.0
+theme_override_constants/separation = 10
+
+[node name="MenuButton" type="Button" parent="CanvasLayer/HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 25
+text = "menu"
+
+[node name="SaveButton" type="Button" parent="CanvasLayer/HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 25
+text = "save"
+
+[node name="LoadButton" type="Button" parent="CanvasLayer/HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 25
+text = "load"
+
+[node name="SaveExitButton" type="Button" parent="CanvasLayer/HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 25
+text = "save_mm"
+
+[node name="NoSaveExitButton" type="Button" parent="CanvasLayer/HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 25
+text = "no_save_mm"
+
+[connection signal="pressed" from="CanvasLayer/HBoxContainer/MenuButton" to="." method="_on_menu_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/HBoxContainer/SaveButton" to="." method="_on_save_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/HBoxContainer/LoadButton" to="." method="_on_load_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/HBoxContainer/SaveExitButton" to="." method="_on_save_exit_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/HBoxContainer/NoSaveExitButton" to="." method="_on_no_save_exit_button_pressed"]

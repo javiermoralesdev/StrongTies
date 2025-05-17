@@ -1,36 +1,35 @@
 [background arg="res://backgrounds/living room.jpg" fade="0.0"]
 [music path="res://music/1.mp3" fade="0.0" volume="0.0" bus="Music"]
-It's eigth o'clock. Cris' parents are in the living room. They are about to go to somewhere
+It's eigth o'clock. Cris' parents are in the living room. They are about to go somewhere.
 
 mom: Honey, are you sure you picked up everything? Phone, keys, flowers...
 
 dad: Yes, I have everything. Let's go.
 [sound path="res://sounds/door.wav" volume="0.0" bus="Sound"]
 
-[wait_input]
 [background arg="res://backgrounds/bedroom.jpg" fade="2.0" transition="Simple Fade"]
 
-cris: Well, well. My parents are finally gone. I think they won't be here until past midnight
+cris: Well, well. My parents are finally gone. I think they won't be here until past midnight.
 
-cris: Um... I think I will listen to music
+cris: Um... I think I will listen to music.
 
 One hour later...
 
-cris: I'm gonna send a message to my boyfriend. I'm so lonely and bored and maybe he wants to come along
+cris: I'm gonna send a message to my boyfriend. I'm so lonely and bored and maybe he wants to come along.
 
 cris: "Hi, handsome. I'm home alone and my parents won't come until very late. You wanna come? ;)"
 
-dani: "I'd love to. But my parents aren't home either and I have to take care of my little"
+dani: "I'd love to. But my parents aren't home either and I have to take care of my little."
 
-cris: "You gotta babysit xd"
+cris: "You gotta babysit xd."
 
 dani: "Very funny... By the way, where did your parents go?"
 
-cris: "I don't know. I only know that my mother went with a black dress I didn't knew she had and my dad wore a smokin and a flower crown"
+cris: "I don't know. I only know that my mother went with a black dress I didn't knew she had and my dad wore a smokin and a flower crown."
 
 dani: "A flower crown? Like the ones they put in graves? Do you know if someone in your family passed away recently?"
 
-cris: "As far I know, no. Maybe it was some coworker or whatever"
+cris: "As far I know, no. Maybe it was some coworker or whatever."
 
 [music path="res://music/2.mp3" fade="1.0" volume="0.0" bus="Music"]
 [sound path="res://sounds/door.wav" volume="0.0" bus="Sound"]
@@ -40,12 +39,12 @@ cris: "Dani! They front door of my house just opened!"
 dani: "Don't worry. Maybe your parents came home earlier than you thought."
 
 [sound path="res://sounds/footsteps1.wav" volume="0.0" bus="Sound"]
-cris: "I don't think so. I'm not hearing them talk to each other and I hear heavy footsteps"
+cris: "I don't think so. I'm not hearing them talk to each other and I hear heavy footsteps."
 
-dani: "Ok. Calm down. If you get nervous you won't get to anything"
+dani: "Ok. Calm down. If you get nervous you won't get to anything."
 
 [sound path="res://sounds/footsteps2.wav" volume="0.0" bus="Sound"]
-cris: "Whatever is in house with me knows I'm here and is coming upstairs to this room"
+cris: "Whatever is in house with me knows I'm here and is coming upstairs to this room."
 
 dani: "Quick! You gotta hide!"
 
@@ -53,13 +52,134 @@ dani: "Quick! You gotta hide!"
 	[background arg="res://backgrounds/closet.jpg" fade="1.0"]
 - Hide under the bed
 	[background arg="res://backgrounds/hidden under bed.png" fade="1.0"]
-[wait_input]
 
-[sound path="res://sounds/door.wav" bus="Sound" ]
-cris: I think it's coming in. I can see a shadow
+[sound path="res://sounds/door.wav" volume="0.0" bus="Sound"]
+cris: "I think it's coming in. I can see a shadow."
 
-dani: You see anything else?
+dani: "You see anything else?"
 
-cris: Not much. I think the intruder is wearing completely black clothes
+cris: "Not much. I think the intruder is wearing completely black clothes."
+
+[sound path="res://sounds/door.wav" volume="0.0" bus="Sound"]
+cris: "I think it's gone now."
+
+dani: "It would be a good idea if you pick something to defend yourself."
+
+cris: "I have nothing useful in my room."
+
+dani: "Maybe you could go to the kitchen and grab a knife."
+
+cris: "I would be too risky."
+
+dani: "But it also could be your only chance."
+
+- Exit the room
+
+[background arg="res://backgrounds/hallway.jpg" fade="1.0" transition="Simple Fade"]
+cris: "I'm in the hallway"
+
+dani: "Do you see the intruder?"
+
+cris: "No, I don't see it. But I can't stand still. I gotta get down."
+- Go to the kitchen
+
+[background arg="res://backgrounds/kitchen.jpg" fade="1.0"]
+cris: "I think I see it!"
+
+dani: "Where is he and how does he look like?"
+
+cris: "He's in the living room. I'm in the kitchen'"
+
+cris: "It's weird. He's wearing a long black tunic and I can't see his face."
+
+dani: "Quick! Grab a knife and attack him!"
+
+Cris grabs a knife, goes to the living room and...
+
+- Attack!
+
+cris: "I don't get it."
+
+cris: "The tunic fell to the floor as if there wasn't anything here."
+
+[music path="res://music/final.mp3" fade="1.0" volume="0.0" bus="Music"]
+dani: ...
+
+dani: "You still don't accept it. Do you?"
+
+cris: "Dani, you're scaring me."
+
+dani: "I'm not Dani."
+
+dani: "I never was."
+
+dani: "I'm just the responsible of making sure you assimilate your fate."
+
+dani: "Or we are."
+
+cris: "Tell me immediatly who the intruder was."
+
+dani: "It was the death itself. It came to take your soul away."
+
+dani: "You no longer belong to this world."
+
+dani: "A truck ran over you last week."
+
+dani: "Your parents are in your funeral."
+
+cris: ...
+
+cris: "Now I remember it..."
+
+cris: "I was crossing the road when that truck went without brakes towards me and ran over me."
+
+cris: "Then why I haven't gone yet?"
+
+dani: "When someone dies so quickly and being so young there's a chance they will not be able to process their own death and their spirit stays in their former home for a while."
+
+dani: "That is when entities like us come in. Pretending to be someone that the victim trusted like, in this case, her couple."
+
+death: Come on, we have to go.
+
+Cris, after accepting her death, took the hand of the death and prepared to leave the existential world.
+
+cris: Wait, I want to do something more before we leave.
+
+[background arg="res://backgrounds/living room.jpg" fade="1.0" transition="Simple Fade"]
+Several hours later, Cris' parent are finally home
+
+mom: Did you left the Cris' room's light on?
+
+dad: No, I'm sure not
+
+[background arg="res://backgrounds/bedroom.jpg" fade="1.0" transition="Simple Fade"]
+
+Her parents run towards Cris' bedroom only to find out nothing more than a note on her bed
+
+cris: "Your daughter loves you. Cris"
+
+Thanks for the playing the game!
+
+I know it doesn't quite fit the theme of the jam but I just really wanted to do a visual novel-like game.
+
+Writing is a big passion of mine as well as gaming and I wanted to do both for this month's jam
+
+label final_check
+Maybe you could check this game's itch.io page, its source or the other games that I made.
+
+- Check out StrongTies on itch
+	[signal arg="itch"]
+	jump final_check
 
 
+- Check out the source code (Github)
+	[signal arg="github"]
+	jump final_check
+
+- Take a look at my other games
+	[signal arg="other"]
+	jump final_check
+
+- Go back to the main menu
+	Once again, thank you for completing the story.
+	[signal arg="end"]
