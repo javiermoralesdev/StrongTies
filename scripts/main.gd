@@ -11,7 +11,7 @@ func _ready():
 func signal_handler(sig_name):
 	match sig_name:
 		"itch":
-			OS.shell_open("google.com")
+			OS.shell_open("https://javier-morales-dev.itch.io/strong-ties")
 			pass
 		"github":
 			OS.shell_open("https://github.com/javiermoralesdev/StrongTies")
@@ -27,12 +27,13 @@ func hide_menu():
 	shown = false
 	for button in menu_buttons:
 		button.visible = false
-		
+	$CanvasLayer/HBoxContainer/MenuButton.text = tr("menu")
 
 func activate_menu():
 	shown = true
 	for button in menu_buttons:
 		button.visible = true
+	$CanvasLayer/HBoxContainer/MenuButton.text = tr("close")
 
 
 func _on_menu_button_pressed() -> void:
@@ -67,3 +68,9 @@ func _on_save_exit_button_pressed() -> void:
 
 func _on_no_save_exit_button_pressed() -> void:
 	quit_game()
+
+func hover():
+	$HoverPlayer.play()
+
+func click_effect():
+	$ClickPlayer.play()

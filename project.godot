@@ -14,7 +14,7 @@ config/name="StrongTies"
 run/main_scene="uid://cwpkl00816i70"
 config/features=PackedStringArray("4.4", "Forward Plus")
 boot_splash/image="uid://fv1fs4u70fvw"
-config/icon="res://icon.svg"
+config/icon="uid://buuc6k20r1ged"
 
 [autoload]
 
@@ -28,6 +28,7 @@ directories/dch_directory={
 "dad": "res://characters/dad.dch",
 "dani": "res://characters/dani.dch",
 "death": "res://characters/death.dch",
+"me": "res://localizations/me.dch",
 "mom": "res://characters/mom.dch"
 }
 directories/dtl_directory={
@@ -58,6 +59,17 @@ choices/reveal_by_input=false
 save/autosave_delay=60.0
 save/encryption_on_exports_only=true
 text/autopauses={}
+translation/enabled=true
+translation/original_locale="en"
+translation/file_mode=1
+translation/translation_folder="res://localizations"
+translation/save_mode=0
+translation/add_separator=true
+translation/intern/save_mode=0
+translation/intern/file_mode=1
+translation/intern/translation_folder="res://localizations"
+translation/id_counter=103
+translation/locales=[]
 
 [display]
 
@@ -80,6 +92,10 @@ dialogic_default_action={
 , Object(InputEventJoypadButton,"resource_local_to_scene":false,"resource_name":"","device":0,"button_index":0,"pressure":0.0,"pressed":false,"script":null)
 ]
 }
+
+[internationalization]
+
+locale/translations=PackedStringArray("res://localizations/translations.en.translation", "res://localizations/translations.es.translation", "res://localizations/dialogic_character_translations.en.translation", "res://localizations/dialogic_main_translation.en.translation", "res://localizations/dialogic_main_translation.es.translation")
 
 [rendering]
 

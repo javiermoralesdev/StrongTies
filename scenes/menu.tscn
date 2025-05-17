@@ -1,8 +1,10 @@
-[gd_scene load_steps=4 format=3 uid="uid://cwpkl00816i70"]
+[gd_scene load_steps=6 format=3 uid="uid://cwpkl00816i70"]
 
 [ext_resource type="Script" uid="uid://du144f15r042g" path="res://scripts/menu.gd" id="1_con2f"]
 [ext_resource type="Texture2D" uid="uid://bbfuyapx01l01" path="res://backgrounds/menu.jpg" id="1_yqeox"]
 [ext_resource type="AudioStream" uid="uid://csf12ne745avv" path="res://music/menu.ogg" id="2_vjb58"]
+[ext_resource type="AudioStream" uid="uid://cde7h3cbe8q8v" path="res://sounds/hover.wav" id="4_mhnvy"]
+[ext_resource type="AudioStream" uid="uid://dl1ph1h02781w" path="res://sounds/click.wav" id="5_4ytvr"]
 
 [node name="Menu" type="CanvasLayer"]
 script = ExtResource("1_con2f")
@@ -29,7 +31,7 @@ grow_vertical = 2
 layout_mode = 1
 anchors_preset = 10
 anchor_right = 1.0
-offset_bottom = 23.0
+offset_bottom = 69.0
 grow_horizontal = 2
 theme_override_font_sizes/font_size = 50
 text = "title"
@@ -63,7 +65,7 @@ text = "mm_settings"
 [node name="CreditsButton" type="Button" parent="MainMenu/VBoxContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 30
-text = "mm_settings"
+text = "mm_credits"
 
 [node name="QuitButton" type="Button" parent="MainMenu/VBoxContainer"]
 layout_mode = 2
@@ -102,12 +104,12 @@ text = "sounds"
 [node name="SoundSlider" type="HSlider" parent="Settings/VBoxContainer"]
 layout_mode = 2
 
-[node name="CheckBox" type="CheckBox" parent="Settings/VBoxContainer"]
+[node name="Fullscreen" type="CheckBox" parent="Settings/VBoxContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 20
 text = "mm_fullscreen"
 
-[node name="Button" type="Button" parent="Settings/VBoxContainer"]
+[node name="BackButton" type="Button" parent="Settings/VBoxContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 25
 text = "mm_back"
@@ -146,12 +148,41 @@ layout_mode = 2
 theme_override_font_sizes/font_size = 25
 text = "mm_back"
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+[node name="MusicPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("2_vjb58")
 autoplay = true
 bus = &"Music"
 
+[node name="HoverPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_mhnvy")
+bus = &"Sound"
+
+[node name="ClickPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_4ytvr")
+bus = &"Sound"
+
+[connection signal="mouse_entered" from="MainMenu/VBoxContainer/PlayButton" to="." method="hover"]
 [connection signal="pressed" from="MainMenu/VBoxContainer/PlayButton" to="." method="_on_play_button_pressed"]
+[connection signal="pressed" from="MainMenu/VBoxContainer/PlayButton" to="." method="click_effect"]
+[connection signal="mouse_entered" from="MainMenu/VBoxContainer/SettingsButton" to="." method="hover"]
 [connection signal="pressed" from="MainMenu/VBoxContainer/SettingsButton" to="." method="_on_settings_button_pressed"]
+[connection signal="pressed" from="MainMenu/VBoxContainer/SettingsButton" to="." method="click_effect"]
+[connection signal="mouse_entered" from="MainMenu/VBoxContainer/CreditsButton" to="." method="hover"]
 [connection signal="pressed" from="MainMenu/VBoxContainer/CreditsButton" to="." method="_on_credits_button_pressed"]
+[connection signal="pressed" from="MainMenu/VBoxContainer/CreditsButton" to="." method="click_effect"]
+[connection signal="mouse_entered" from="MainMenu/VBoxContainer/QuitButton" to="." method="hover"]
 [connection signal="pressed" from="MainMenu/VBoxContainer/QuitButton" to="." method="_on_quit_button_pressed"]
+[connection signal="pressed" from="MainMenu/VBoxContainer/QuitButton" to="." method="click_effect"]
+[connection signal="mouse_entered" from="Settings/VBoxContainer/MusicSlider" to="." method="hover"]
+[connection signal="value_changed" from="Settings/VBoxContainer/MusicSlider" to="." method="update_music"]
+[connection signal="mouse_entered" from="Settings/VBoxContainer/SoundSlider" to="." method="hover"]
+[connection signal="value_changed" from="Settings/VBoxContainer/SoundSlider" to="." method="update_sounds"]
+[connection signal="mouse_entered" from="Settings/VBoxContainer/Fullscreen" to="." method="hover"]
+[connection signal="pressed" from="Settings/VBoxContainer/Fullscreen" to="." method="click_effect"]
+[connection signal="toggled" from="Settings/VBoxContainer/Fullscreen" to="." method="update_fullscreen"]
+[connection signal="mouse_entered" from="Settings/VBoxContainer/BackButton" to="." method="hover"]
+[connection signal="pressed" from="Settings/VBoxContainer/BackButton" to="." method="go_back"]
+[connection signal="pressed" from="Settings/VBoxContainer/BackButton" to="." method="click_effect"]
+[connection signal="mouse_entered" from="Credits/VBoxContainer/BackButton" to="." method="hover"]
+[connection signal="pressed" from="Credits/VBoxContainer/BackButton" to="." method="go_back"]
+[connection signal="pressed" from="Credits/VBoxContainer/BackButton" to="." method="click_effect"]

@@ -1,6 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://dh73wxs42cgpi"]
+[gd_scene load_steps=4 format=3 uid="uid://dh73wxs42cgpi"]
 
 [ext_resource type="Script" uid="uid://dd66wc8rlefa3" path="res://scripts/main.gd" id="1_o5qli"]
+[ext_resource type="AudioStream" uid="uid://cde7h3cbe8q8v" path="res://sounds/hover.wav" id="2_sugp2"]
+[ext_resource type="AudioStream" uid="uid://dl1ph1h02781w" path="res://sounds/click.wav" id="3_jyhfs"]
 
 [node name="Main" type="Node2D" node_paths=PackedStringArray("menu_buttons")]
 script = ExtResource("1_o5qli")
@@ -41,8 +43,26 @@ layout_mode = 2
 theme_override_font_sizes/font_size = 25
 text = "no_save_mm"
 
+[node name="HoverPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_sugp2")
+bus = &"Sound"
+
+[node name="ClickPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_jyhfs")
+bus = &"Sound"
+
+[connection signal="mouse_entered" from="CanvasLayer/HBoxContainer/MenuButton" to="." method="hover"]
 [connection signal="pressed" from="CanvasLayer/HBoxContainer/MenuButton" to="." method="_on_menu_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/HBoxContainer/MenuButton" to="." method="click_effect"]
+[connection signal="mouse_entered" from="CanvasLayer/HBoxContainer/SaveButton" to="." method="hover"]
 [connection signal="pressed" from="CanvasLayer/HBoxContainer/SaveButton" to="." method="_on_save_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/HBoxContainer/SaveButton" to="." method="click_effect"]
+[connection signal="mouse_entered" from="CanvasLayer/HBoxContainer/LoadButton" to="." method="hover"]
 [connection signal="pressed" from="CanvasLayer/HBoxContainer/LoadButton" to="." method="_on_load_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/HBoxContainer/LoadButton" to="." method="click_effect"]
+[connection signal="mouse_entered" from="CanvasLayer/HBoxContainer/SaveExitButton" to="." method="hover"]
 [connection signal="pressed" from="CanvasLayer/HBoxContainer/SaveExitButton" to="." method="_on_save_exit_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/HBoxContainer/SaveExitButton" to="." method="click_effect"]
+[connection signal="mouse_entered" from="CanvasLayer/HBoxContainer/NoSaveExitButton" to="." method="hover"]
 [connection signal="pressed" from="CanvasLayer/HBoxContainer/NoSaveExitButton" to="." method="_on_no_save_exit_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/HBoxContainer/NoSaveExitButton" to="." method="click_effect"]

@@ -1,0 +1,91 @@
+keys,en,es
+Text/11/text,It's eigth o'clock. Cris' parents are in the living room. They are about to go somewhere.,Son las ocho de la tarde. Los padres de Cris están en el recibidor. Están a punto de irse a un sitio
+Text/12/text,"Honey, are you sure you picked up everything? Phone, keys, flowers...","Cariño, ¿Seguro que lo tienes todo? Móvil, llaves flores…"
+Text/13/text,"Yes, I have everything. Let's go.","Sí, lo tengo todo. Vámonos"
+Text/14/text,"Well, well. My parents are finally gone. I think they won't be here until past midnight.","Bueno, mis padres ya se ha ido. Creo que no volverán hasta pasada la media noche. "
+Text/15/text,Um... I think I will listen to music.,Um… Creo que escucharé algo de música
+Text/16/text,One hour later...,Una hora después…
+Text/17/text,I'm gonna send a message to my boyfriend. I'm so lonely and bored and maybe he wants to come along.,Le voy a mandar un mensaje a mi novio. Estoy sola y aburrida e igual se quiere pasar un rato
+Text/18/text,"""Hi, handsome. I'm home alone and my parents won't come until very late. You wanna come? ;)""","Hola, guapetón. Estoy sola en casa hasta mañana. ¿Quieres venir y vemos una película?"
+Text/19/text,"""I'd love to. But my parents aren't home either and I have to take care of my little.""","Me encantaría, pero mis padres tampoco están en casa y me toca cuidar de mi hermano pequeño"
+Text/1a/text,"""You gotta babysit xd.""",Te toca hacer de niñera xd
+Text/1b/text,"""Very funny... By the way, where did your parents go?""","Muy graciosa… Por cierto, ¿Sabes adónde han ido tus padres?"
+Text/1c/text,"""I don't know. I only know that my mother went with a black dress I didn't knew she had and my dad wore a smokin and a flower crown.""",Ni idea. Solo sé que mi madre llevaba un vestido negro que ni sabía que tenía y padre llevaba un esmoquin y una corona de flores.
+Text/1d/text,"""A flower crown? Like the ones they put in graves? Do you know if someone in your family passed away recently?""",¿Una corona de flores? ¿Como las que se ponen en los funerales? ¿Sabes si alguien en tu familia ha fallecido recientemente?
+Text/1e/text,"""As far I know, no. Maybe it was some coworker or whatever.""","Que yo sepa no, quizá es algún compañero de trabajo."
+Text/1f/text,"""Dani! They front door of my house just opened!""",¡Dani! ¡La puerta principal de mi casa se acaba de abrir!
+Text/20/text,"""Don't worry. Maybe your parents came home earlier than you thought.""",No te preocupes. Seguramente tu padres han vuelto a casa antes de tiempo.
+Text/21/text,"""I don't think so. I'm not hearing them talk to each other and I hear heavy footsteps.""",No lo creo. No les oigo hablar entre ellos y oigo pasos pesados.
+Text/22/text,"""Ok. Calm down. If you get nervous you won't get to anything.""",Vale. Cálmate. No conseguirás nada si te alarmas.
+Text/23/text,"""Whatever is in house with me knows I'm here and is coming upstairs to this room.""",¡Lo que sea que está en mi casa esta subiendo las escaleras! ¡Creo que sabe que estoy aquí y viene a por mí!
+Text/24/text,"""Quick! You gotta hide!""","¡Corre, escóndete!"
+Choice/25/text,Hide in the closet,Escóndete en el armario
+Choice/25/disabled_text,,
+Choice/26/text,Hide under the bed,Escóndete debajo de la cama
+Choice/26/disabled_text,,
+Text/27/text,"""I think it's coming in. I can see a shadow.""",Creo que está entrando. Puedo ver una sombra.
+Text/28/text,"""You see anything else?""",¿Ves algo más?
+Text/29/text,"""Not much. I think the intruder is wearing completely black clothes.""",No mucho. Creo que el intruso va vestido completamente de negro
+Text/2a/text,"""I think it's gone now.""",Creo que se acaba de ir
+Text/2b/text,"""It would be a good idea if you pick something to defend yourself.""",Sería buena idea que cogieras algo para defenderte
+Text/2c/text,"""I have nothing useful in my room.""",No tengo nada útil en mi cuarto
+Text/2d/text,"""Maybe you could go to the kitchen and grab a knife.""",Podrías probar a ir a la cocina a por un cuchillo
+Text/2e/text,"""I would be too risky.""",Sería demasiado arriesgado
+Text/2f/text,"""But it also could be your only chance.""",Pero también sería tu única oportunidad
+Choice/30/text,Exit the room,Salir de la habitación
+Choice/30/disabled_text,,
+Text/31/text,"""I'm in the hallway""",Estoy en el pasillo
+Text/32/text,"""Do you see the intruder?""",¿Ves al intruso?
+Text/33/text,"""No, I don't see it. But I can't stand still. I gotta get down.""","No, no le veo. Pero no puedo quedarme quieta. Voy a bajar"
+Choice/34/text,Go to the kitchen,Ir a la cocina
+Choice/34/disabled_text,,
+Text/35/text,"""I think I see it!""",¡Le veo!
+Text/36/text,"""Where is he and how does he look like?""",¿Dónde está y que aspecto tiene?
+Text/37/text,"""He's in the living room. I'm in the kitchen'""",Está en el salón 
+Text/38/text,"""It's weird. He's wearing a long black tunic and I can't see his face.""",Qué raro. Lleva una túnica larga y negra y va encapuchado
+Text/39/text,"""Quick! Grab a knife and attack him!""",¡Deprisa! ¡Coge un cuchillo y acaba con él!
+Text/3a/text,"Cris grabs a knife, goes to the living room and...","Cris coge un cuchillo, va hacia el salón y…"
+Choice/3b/text,Attack!,¡Ataca!
+Choice/3b/disabled_text,,
+Text/3c/text,"""I don't get it.""",No lo entiendo…
+Text/3d/text,"""The tunic fell to the floor as if there wasn't anything here.""",La túnica se ha caido al suelo y es como si nunca hubiera habido nada
+Text/3e/text,...,…
+Text/3f/text,"""You still don't accept it. Do you?""","Aún no lo aceptas, ¿verdad?"
+Text/40/text,"""Dani, you're scaring me.""","Dani, me estás asustando"
+Text/41/text,"""I'm not Dani.""",No soy Dani
+Text/42/text,"""I never was.""",Nunca lo fui
+Text/43/text,"""I'm just the responsible of making sure you assimilate your fate.""",Solo soy el responsable de que aceptes tu destino
+Text/44/text,"""Or we are.""","O mejor dicho, somos"
+Text/45/text,"""Tell me immediatly who the intruder was.""",Dime inmediatamente quién era el intruso
+Text/46/text,"""It was the death itself. It came to take your soul away.""",Era la mismísima muerte. Había venido a llevarse tu alma
+Text/47/text,"""You no longer belong to this world.""",Ya no perteneces a este mundo
+Text/48/text,"""A truck ran over you last week.""",Un camión te atropelló la semana pasada
+Text/49/text,"""Your parents are in your funeral.""",Tus padres están ahora mismo en tu entierro
+Text/4a/text,...,…
+Text/4b/text,"""Now I remember it...""",Ahora lo recuerdo todo
+Text/4c/text,"""I was crossing the road when that truck went without brakes towards me and ran over me.""",Estaba cruzando la carretera cuando ese camión iba sin frenos en mi dirección y me llevó por delante
+Text/4d/text,"""Then why I haven't gone yet?""",¿Entonces porque no me he ido aún?
+Text/4e/text,"""When someone dies so quickly and being so young there's a chance they will not be able to process their own death and their spirit stays in their former home for a while.""","Cuando alguien muere de forma tan repentina y siendo tan joven, existe la posibilidad de que su alma se quede en su antiguo hogar por un tiempo"
+Text/4f/text,"""That is when entities like us come in. Pretending to be someone that the victim trusted like, in this case, her couple.""","Es entonces cuando entes como yo entramos en acción haciéndonos pasar por una persona de confianza para la víctima como, en este caso, su pareja"
+Text/50/text,"Come on, we have to go.","Vamos, nos tenemos que ir"
+Text/51/text,"Cris, after accepting her death, took the hand of the death and prepared to leave the existential world.","Cris, tras aceptar su muerte, cogió la mano de la muerte y se dispuso a ir al más allá"
+Text/52/text,"Wait, I want to do something more before we leave.","Espera, hay algo más que quiero hacer antes que nos vayamos para siempre"
+Text/53/text,"Several hours later, Cris' parent are finally home","Varias horas después, los padres de Cris llegan a casa"
+Text/54/text,Did you left the Cris' room's light on?,¿Dejaste la luz del cuarto de Cris encendida?
+Text/55/text,"No, I'm sure not",No. Estoy seguro de que no
+Text/56/text,Her parents run towards Cris' bedroom only to find out nothing more than a note on her bed,Sus padres corren hacia la habitación de Cris solo para encontrar una nota encima de la cama
+Text/57/text,"""Your daughter loves you. Cris""",“Vuestra hija os quiere. Cris”
+Text/58/text,Thanks for the playing the game!,Gracias por jugar a mi juego
+Text/59/text,I know it doesn't quite fit the theme of the jam but I just really wanted to do a visual novel-like game.,Sé que no termina de encajar en el tema de la jam pero quería hacer un juego tipo novela visual
+Text/5a/text,Writing is a big passion of mine as well as gaming and I wanted to do both for this month's jam,Me encanta escribir y también los videojuegos por lo que quería combinar los dos en esta jam
+Label/5b/display_name,,
+Text/5c/text,"Maybe you could check this game's itch.io page, its source or the other games that I made.","Podrías comprobar la página de itch.io del juego, su código fuente o los demás juegos que he hecho (son muy diferentes a este)"
+Choice/5d/text,Check out StrongTies on itch,Visitar la página de Strong Ties en itch.io
+Choice/5d/disabled_text,,
+Choice/5e/text,Check out the source code (Github),Echar un vistazo al código fuente
+Choice/5e/disabled_text,,
+Choice/5f/text,Take a look at my other games,Ver mis demás proyectos
+Choice/5f/disabled_text,,
+Choice/60/text,Go back to the main menu,Regresar al menú principal
+Choice/60/disabled_text,,
+Text/61/text,"Once again, thank you for completing the story.",Una vez más. Gracias por completar esta historia
