@@ -4,11 +4,14 @@ const SAVE_GAME_PATH = "user://settings.tres"
 @onready var settings_data = SettingsData.new()
 
 func _ready() -> void:
+	if OS.get_name() == "Web" or OS.get_name() == "Android":
+		$MainMenu/VBoxContainer/QuitButton.queue_free()
+		$Settings/VBoxContainer/Fullscreen.queue_free()
 	if ResourceLoader.exists(SAVE_GAME_PATH):
 		settings_data = load(SAVE_GAME_PATH) as SettingsData
-	AudioServer.set_bus_volume_db(AudioServer.get_bus_index("Music"), linear_to_db(settings_data.music_vol))
-	AudioServer.set_bus_volume_db(AudioServer.get_bus_index("Sound"), linear_to_db(settings_data.sound_vol))
-	DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_FULLSCREEN if settings_data.fullscreen else DisplayServer.WINDOW_MODE_WINDOWED)
+		AudioServer.set_bus_volume_db(AudioServer.get_bus_index("Music"), linear_to_db(settings_data.music_vol))
+		AudioServer.set_bus_volume_db(AudioServer.get_bus_index("Sound"), linear_to_db(settings_data.sound_vol))
+		DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_FULLSCREEN if settings_data.fullscreen else DisplayServer.WINDOW_MODE_WINDOWED)
 	
 	$Settings/VBoxContainer/MusicSlider.value = settings_data.music_vol * 100
 	$Settings/VBoxContainer/SoundSlider.value = settings_data.sound_vol * 100
